@@ -1,0 +1,40 @@
+
+<div *ngFor="let producto of productos">
+    
+    <h2><a [title]="producto.nombre">{{producto.nombre}}</a></h2>
+    <img src="assets/productos/{{producto.imagen}}" width="180px">
+    <p *ngIf="producto.resena">
+        Reseña: {{producto.resena}}
+    </p>
+
+    <span class="precio">Precio: {{producto.precio}}</span><br>
+    <span class="stock">Stock: {{producto.stock}}</span><br>
+    <span class="agotado" *ngIf="!producto.disponible">Agotado!!</span>
+
+    <button *ngIf="producto.disponible" (click)="comprar(producto)">Agregar</button>
+    <br>
+    <br>
+</div>
+
+<article>            
+    <h2> Sobre Nosotros</h2>
+   
+    <p>
+        Hacemos que sea fácil de vender y promocionar sus libros 
+        cualquier tipo de productos digitales directamente 
+        a sus clientes. Nos respalda PUCV.                
+    </p>
+
+    <footer id='Sobre Nosotros'>
+        <nav>
+            <ul>                            
+                <li><a href= 'http://www.pucv.cl'>Pontifia Universidad Catolica de Valparaiso </a></li>
+            </ul>
+        </nav>
+    </footer>
+
+
+</article>
+<footer id='fin'>
+    Copyright @2020
+</footer>

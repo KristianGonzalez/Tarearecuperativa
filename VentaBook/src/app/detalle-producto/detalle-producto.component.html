@@ -1,0 +1,16 @@
+<h2>Detalle Producto</h2>
+
+<div *ngIf="producto">
+  <h2><a [title]="producto.nombre">{{producto.nombre}}</a></h2>
+    <img src="assets/productos/{{producto.imagen}}" width="180px">
+    <p *ngIf="producto.resena">
+        Reseña: {{producto.resena}}
+    </p>
+    <span class="autor">Autor: {{producto.autor}}</span><br>
+    <span class="category">Categoria Principal: {{producto.cat}}</span><br>
+    <span class="publicacion">Fecha Publicacion: {{producto.publicacion}}</span><br>
+    <span class="precio">Precio: {{producto.precio}}</span><br>
+    <span class="stock">Stock: {{producto.stock}}</span><br>
+    <span class="agotado" *ngIf="!producto.disponible">Agotado!!</span>
+
+</div>

@@ -1,0 +1,44 @@
+div{
+    margin:24px;
+    background-color: lightgoldenrodyellow;
+}
+div h2{
+
+    font-size: 32px;
+    color: blue;
+}
+.precio{
+    color: green;
+    float: left;
+}
+
+.agotado{
+    color: red;
+    font-weight: bold;
+    float: right;
+}
+
+button{
+    float: right;
+}
+div p{
+    font-weight:  50%;
+}
+article{
+    text-align: center;
+    width:100%;
+    background-color: lightgray;
+    float:center;
+    padding:10px;
+}
+
+article h2{
+    font-size:18px;
+    font-weight: bold;
+}
+footer#fin {
+    clear:both;
+    text-align:center;
+    background-color:black;
+    color:white;
+}

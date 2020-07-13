@@ -1,0 +1,13 @@
+<h3>Mi Carrito</h3>
+<div *ngFor="let item of items">
+    <ul>
+        <li><a routerLink="/producto/{{item.id}}">{{item.nombre}}</a></li>
+        <li>{{item.precio}}</li>
+        <li>{{item.cantidad }}</li>
+        <li ><a routerLink="/carrito/{{item.id}}"><i class="material-icons"> delete</i></a></li><br>
+
+    </ul>
+</div>
+<button [routerLink]="['/pago']">Pagar</button>
+
+
